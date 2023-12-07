@@ -1,3 +1,3 @@
-const today = new Date().toISOString().slice(0, 10)
+const today = new Date().toLocaleDateString().split('.').reverse().join('-')
 
 export { today }

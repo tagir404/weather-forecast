@@ -19,8 +19,8 @@ function getCelsiusTemp(temp: number) {
     return Math.round(((temp - 32) * 5) / 9)
 }
 
-async function getWeatherData(lat: number, long: number) {
-    const res = await axios
+function getWeatherData(lat: number, long: number) {
+    const res = axios
         .get(
             `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${lat},${long}?key=D52NUFUDL7963TWL6VX3X2BQJ`
         ).then(res => res.data.days)
