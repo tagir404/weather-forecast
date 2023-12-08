@@ -4,6 +4,7 @@ interface Day {
     temp: number,
     sunrise: string,
     sunset: string,
+    windspeed: number
 }
 
 export type { Day }
